@@ -12,10 +12,16 @@ public class Turtle {
     private double angle;    // facing this many degrees counterclockwise from the x-axis
 
     // start at (x0, y0), facing a0 degrees counterclockwise from the x-axis
+    public Turtle(){
+        this.x = 0;
+        this.y = 0;
+        this.angle = 0;
+    }
+
     public Turtle(double x0, double y0, double a0) {
-        x = x0;
-        y = y0;
-        angle = a0;
+        this.x = x0;
+        this.y = y0;
+        this.angle = a0;
     }
 
     // rotate orientation delta degrees counterclockwise
